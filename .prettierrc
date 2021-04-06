@@ -5,5 +5,6 @@
     "endOfLine": "lf",
     "tabWidth": 4,
     "printWidth": 80,
+    "singleQuote": true,
     "useTabs": false
   }
