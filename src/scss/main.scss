@@ -836,7 +836,7 @@ img {
                 padding: 9px 9px;
                 border: none;
                 outline: none;
-                box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 .bx {
                     font-size: $big-font-size;
                     font-weight: $font-bold;
