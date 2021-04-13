@@ -1,0 +1,43 @@
+{
+  "categories": [
+      {
+          "id": 1,
+          "name": "Nike",
+          "createdAt": 1610346753759,
+          "updatedAt": 1610346753759
+      }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product0016",
+      "image": "assets/images/featured1.png",
+      "cost": 10.0,
+      "quantity": 1000,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Product002",
+      "image": "assets/images/featured2.png",
+      "cost": 20.0,
+      "quantity": 2000,
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "Product003",
+      "image": "assets/images/featured3.png",
+      "cost": 30.0,
+      "quantity": 3000
+    },
+    {
+      "id": 4,
+      "name": "Product004",
+      "image": "assets/images/women1.png",
+      "cost": 40.0,
+      "quantity": 4000,
+      "categoryId": 1
+    }
+  ]
+}
