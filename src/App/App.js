@@ -1,10 +1,10 @@
 // eslint-disable-next-line
-import './App.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { getProducts } from '../actions/product'
 import React, { useEffect } from 'react'
 import Product from '../components/product/products'
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 function App() {
     const products = useSelector(state => state.products)
@@ -82,6 +82,7 @@ function App() {
                     </div>
                 </section>
             </main>
+            <Footer />
         </div>
     )
 }
