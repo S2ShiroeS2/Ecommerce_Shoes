@@ -1,0 +1,319 @@
+{
+    "intro": [
+        {
+            "buttonTitle": "Explore now",
+            "id": 324234324,
+            "title": "YEEZY BOOST <br/>SPLY - 350",
+            "description": "Explore the new collections of sneakers",
+            "price": {
+                "currency": "VND",
+                "currentPrice": 2678000,
+                "discounted": true,
+                "memberPrice": 1606800,
+                "fullPrice": 3829000
+            },
+            "position": 1,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/imghome.png",
+            "lable": "New in"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "title": "Nike Jordan",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": true,
+                "discount": "20%",
+                "memberPrice": 159.99,
+                "fullPrice": 199.99
+            },
+            "position": 1,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured1.png"
+        },
+        {
+            "id": 2,
+            "title": "Nike Free RN",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": true,
+                "discount": "20%",
+                "memberPrice": 159.99,
+                "fullPrice": 199.99
+            },
+            "position": 2,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured2.png"
+        },
+        {
+            "id": 3,
+            "title": "Nike Free RN",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": true,
+                "discount": "20%",
+                "memberPrice": 159.99,
+                "fullPrice": 199.99
+            },
+            "position": 3,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured1.png"
+        }
+    ],
+    "collections": [
+        {
+            "id": 1,
+            "title": "Nike",
+            "subTitle": "New collection 2020",
+            "image": "assets/images/collection1.png"
+        },
+        {
+            "id": 2,
+            "title": "Adidas",
+            "subTitle": "New collection 2020",
+            "image": "assets/images/collection2.png"
+        }
+    ],
+    "mens": [
+        {
+            "id": 1,
+            "title": "Nike Jordan",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 1,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured1.png"
+        },
+        {
+            "id": 2,
+            "title": "Nike Jordan",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 2,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured2.png"
+        },
+        {
+            "id": 3,
+            "title": "Nike Jordan",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 3,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured3.png"
+        },
+        {
+            "id": 4,
+            "title": "Nike Jordan",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 4,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/featured1.png"
+        }
+    ],
+    "womens": [
+        {
+            "id": 1,
+            "title": "Nike Free TR",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 1,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/women1.png"
+        },
+        {
+            "id": 2,
+            "title": "Nike Free TR",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 2,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/women2.png"
+        },
+        {
+            "id": 3,
+            "title": "Nike GS Pink",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 3,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/women3.png"
+        },
+        {
+            "id": 4,
+            "title": "Nike Get 5",
+            "price": {
+                "currency": "USD",
+                "currentPrice": 199.99,
+                "discounted": false,
+                "discount": null,
+                "memberPrice": 199.99,
+                "fullPrice": 199.99
+            },
+            "position": 4,
+            "inStock": true,
+            "isExcluded": false,
+            "isNew": true,
+            "image": "assets/images/women4.png"
+        }
+    ],
+    "sales": [
+        {
+            "id": 1,
+            "title": "50% OFF",
+            "sub_title": "In Adidas Superstar sneakers",
+            "position": 1,
+            "image": "assets/images/offert.png"
+        }
+    ],
+    "news": [
+        {
+            "main": {
+                "id": 1,
+                "title": "Mens shoes",
+                "sub_title": "From $79.99",
+                "image": "assets/images/new1.png"
+            },
+            "subs": [
+                {
+                    "id": 1,
+                    "title": "SPLY - 350",
+                    "price": {
+                        "currency": "USD",
+                        "currentPrice": 79.99,
+                        "discounted": false,
+                        "discount": null,
+                        "memberPrice": 79.99,
+                        "fullPrice": 79.99
+                    },
+                    "position": 1,
+                    "inStock": true,
+                    "isExcluded": false,
+                    "isNew": true,
+                    "image": "assets/images/new2.png"
+                },
+                {
+                    "id": 1,
+                    "title": "SPLY - 350",
+                    "price": {
+                        "currency": "USD",
+                        "currentPrice": 79.99,
+                        "discounted": false,
+                        "discount": null,
+                        "memberPrice": 79.99,
+                        "fullPrice": 79.99
+                    },
+                    "position": 1,
+                    "inStock": true,
+                    "isExcluded": false,
+                    "isNew": true,
+                    "image": "assets/images/new3.png"
+                },
+                {
+                    "id": 1,
+                    "title": "SPLY - 350",
+                    "price": {
+                        "currency": "USD",
+                        "currentPrice": 79.99,
+                        "discounted": false,
+                        "discount": null,
+                        "memberPrice": 79.99,
+                        "fullPrice": 79.99
+                    },
+                    "position": 1,
+                    "inStock": true,
+                    "isExcluded": false,
+                    "isNew": true,
+                    "image": "assets/images/new4.png"
+                },
+                {
+                    "id": 1,
+                    "title": "SPLY - 350",
+                    "price": {
+                        "currency": "USD",
+                        "currentPrice": 79.99,
+                        "discounted": false,
+                        "discount": null,
+                        "memberPrice": 79.99,
+                        "fullPrice": 79.99
+                    },
+                    "position": 1,
+                    "inStock": true,
+                    "isExcluded": false,
+                    "isNew": true,
+                    "image": "assets/images/new5.png"
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 import axios from 'axios'
 
-const url = 'http://localhost:3000/products'
+const url = 'products'
 
 export const fetchProducts = () => axios.get(url)

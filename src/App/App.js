@@ -1,31 +1,33 @@
 // eslint-disable-next-line
-import { useSelector, useDispatch } from 'react-redux'
-import { getProducts } from '../actions/product'
+// import { useSelector, useDispatch } from 'react-redux'
+// import { getProducts } from '../actions/product'
 import React, { useEffect } from 'react'
-import Product from '../components/product/products'
+// import Product from '../components/product/products'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
+import Home from '../pages/Home'
 
 function App() {
-    const products = useSelector(state => state.products)
-    const dispatch = useDispatch()
+    // const products = useSelector(state => state.products)
+    // const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(getProducts())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(getProducts())
+    // }, [dispatch])
 
-    const renderProductList = () => {
-        return products.map(product => (
-            <Product data={product} key={product.id} />
-        ))
-    }
+    // const renderProductList = () => {
+    //     return products.map(product => (
+    //         <Product data={product} key={product.id} />
+    //     ))
+    // }
 
-    const productList = renderProductList()
+    // const productList = renderProductList()
 
     return (
         <div>
             <Header />
-            <div className="main-header">
+            <Home />
+            {/* <div className="main-header">
                 <div className="main-header__container">
                     <div className="main-header__content bd-grid">
                         <h1 className="main-header__title">
@@ -81,7 +83,7 @@ function App() {
                         </div>
                     </div>
                 </section>
-            </main>
+            </main> */}
             <Footer />
         </div>
     )
