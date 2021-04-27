@@ -1,0 +1,22 @@
+{
+    "name": "json-server-ecommerce-shoes",
+    "version": "1.0.0",
+    "description": "Fake api",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon main.js",
+        "start": "node main.js"
+    },
+    "keywords": [
+        "json-server"
+    ],
+    "author": "Tu Quoc Hung",
+    "license": "MIT",
+    "dependencies": {
+        "json-server": "^0.16.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}

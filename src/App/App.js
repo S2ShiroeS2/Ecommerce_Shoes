@@ -1,89 +1,67 @@
 // eslint-disable-next-line
-// import { useSelector, useDispatch } from 'react-redux'
-// import { getProducts } from '../actions/product'
 import React, { useEffect } from 'react'
-// import Product from '../components/product/products'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
+import Header from '../layouts/Header/Header'
+import Footer from '../layouts/Footer/Footer'
 import Home from '../pages/Home'
 
 function App() {
-    // const products = useSelector(state => state.products)
-    // const dispatch = useDispatch()
+    const showMenu = (toggleId, navId) => {
+        const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId)
 
-    // useEffect(() => {
-    //     dispatch(getProducts())
-    // }, [dispatch])
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('show')
+            })
+        }
+    }
 
-    // const renderProductList = () => {
-    //     return products.map(product => (
-    //         <Product data={product} key={product.id} />
-    //     ))
-    // }
+    // REMOVE MENU
+    const navLink = document.querySelectorAll('.nav__link'),
+        navMenu = document.getElementById('nav-menu')
 
-    // const productList = renderProductList()
+    const linkAction = () => {
+        navMenu.classList.remove('show')
+    }
+    navLink.forEach(n => n.addEventListener('click', linkAction))
+    //SCROLL SECTIONS ACTIVE LINK
+    const sections = document.querySelectorAll('section[id]')
+    const scrollActive = () => {
+        const scrollY = window.pageYOffset
+
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight
+            const sectionTop = current.offsetTop - 50,
+                sectionId = current.getAttribute('id')
+
+            if (scrollY > sectionTop && scrollY <= sectionHeight + sectionTop) {
+                document
+                    .querySelector('.nav__menu a[href*=' + sectionId + ']')
+                    .classList.add('active')
+            } else {
+                document
+                    .querySelector('.nav__menu a[href*=' + sectionId + ']')
+                    .classList.remove('active')
+            }
+        })
+    }
+    window.addEventListener('scroll', scrollActive)
+
+    //CHANGE COLOR HEADER
+    window.onscroll = () => {
+        const screenY = window.screenY
+        const header = document.getElementById('header')
+        screenY >= 200
+            ? header.classList.add('scroll-header')
+            : header.classList.remove('scroll-header')
+    }
+
+    showMenu('nav-toggle', 'nav-menu')
 
     return (
         <div>
             <Header />
             <Home />
-            {/* <div className="main-header">
-                <div className="main-header__container">
-                    <div className="main-header__content bd-grid">
-                        <h1 className="main-header__title">
-                            Men's Shoes{' '}
-                            <span className="main-header__count">(385)</span>
-                        </h1>
-                        <nav className="main-header__navbar">
-                            <button className="main-header__filter-btn">
-                                <span className="main-header__filter-btn--text">
-                                    Show Filters
-                                </span>
-                                <i className="bx bxs-chevron-left"></i>
-                            </button>
-                            <button className="main-header__short">
-                                <span className="main-header__short--text">
-                                    Short By
-                                </span>
-                                <i className="bx bxs-chevron-down"></i>
-                            </button>
-                            <ul className="main-header__short--wapper">
-                                <li>
-                                    <a href="/#">Featured</a>
-                                </li>
-                                <li>
-                                    <a href="/#">Newest</a>
-                                </li>
-                                <li>
-                                    <a href="/#">Price: High-Low</a>
-                                </li>
-                                <li>
-                                    <a href="/#">Price: Low-High</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <button className="menu-expand">
-                            <i className="bx bx-expand-alt"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <main className="l-main section shop">
-                <section className="featured" id="featured">
-                    <div className="feature__container bd-grid">
-                        {productList}
-                    </div>
-                    <div className="sneaker__pages bd-grid">
-                        <div>
-                            <span className="sneaker__pag">1</span>
-                            <span className="sneaker__pag">2</span>
-                            <span className="sneaker__pag">3</span>
-                            <span className="sneaker__pag">4</span>
-                            <span className="sneaker__pag">&#8594;</span>
-                        </div>
-                    </div>
-                </section>
-            </main> */}
             <Footer />
         </div>
     )

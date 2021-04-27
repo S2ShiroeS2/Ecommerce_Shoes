@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ProductIntro() {
+export default function ProductIntro(props) {
     return (
         <section className="home" id="home">
             <div className="home__container bd-grid">
@@ -8,20 +8,23 @@ export default function ProductIntro() {
                     <div className="home__shape"></div>
                     <img
                         className="home__image"
-                        src="../assets/images/imghome.png"
+                        src={props?.data?.[0]?.image}
                         alt="home"
                     />
                 </div>
                 <div className="home__content">
-                    <span className="home__new">New in</span>
-                    <h1 className="home__title">
-                        YEEZY BOOST <br /> SPLY - 350
-                    </h1>
+                    <span className="home__new">{props?.data?.[0]?.label}</span>
+                    <h1
+                        className="home__title"
+                        dangerouslySetInnerHTML={{
+                            __html: props?.data?.[0]?.title
+                        }}
+                    ></h1>
                     <p className="home__description">
-                        Explore the new collections of sneakers
+                        {props?.data?.[0]?.description}
                     </p>
                     <a href="/#" className="btn-explore">
-                        Explore now
+                        {props?.data?.[0]?.button_Title}
                     </a>
                 </div>
             </div>
