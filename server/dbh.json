@@ -69,14 +69,16 @@
         {
             "id": 1,
             "title": "Nike",
-            "subTitle": "New collection 2020",
-            "image": "../assets/images/collection1.png"
+            "sub_Title": "New collection 2020",
+            "image": "../assets/images/collection1.png",
+            "button_Title": "Buy now"
         },
         {
             "id": 2,
             "title": "Adidas",
-            "subTitle": "New collection 2020",
-            "image": "../assets/images/collection2.png"
+            "sub_Title": "New collection 2020",
+            "image": "../assets/images/collection2.png",
+            "button_Title": "Buy now"
         }
     ],
     "mens": [

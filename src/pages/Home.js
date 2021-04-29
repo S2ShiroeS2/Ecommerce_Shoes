@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ProductIntro from '../components/ProductIntro/ProductIntro'
 import Feature from '../components/Feature/Feature'
+import Collection from '../components/Collection/Collection'
 import introApi from '../apis/introApi'
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <main className="l-main">
             <ProductIntro key={introData.id} data={introData} />
             <Feature />
+            <Collection />
         </main>
     )
 }
