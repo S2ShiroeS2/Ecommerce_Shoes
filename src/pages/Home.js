@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ProductIntro from '../components/ProductIntro/ProductIntro'
 import Feature from '../components/Feature/Feature'
 import Collection from '../components/Collection/Collection'
+import MenSneakers from '../components/MenSneakers/MenSneakers'
 import introApi from '../apis/introApi'
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
             <ProductIntro key={introData.id} data={introData} />
             <Feature />
             <Collection />
+            <MenSneakers />
         </main>
     )
 }
