@@ -4,6 +4,7 @@ import Feature from '../components/Feature/Feature'
 import Collection from '../components/Collection/Collection'
 import MenSneakers from '../components/MenSneakers/MenSneakers'
 import introApi from '../apis/introApi'
+import WomenSneakers from '../components/WomenSneakers/WomenSneakers'
 
 export default function Home() {
     const [introData, setIntroData] = useState([])
@@ -29,6 +30,7 @@ export default function Home() {
             <Feature />
             <Collection />
             <MenSneakers />
+            <WomenSneakers />
         </main>
     )
 }
