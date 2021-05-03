@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import ProductItem from '../ProductItem/ProductItem'
-import menProductHomeAPI from '../../apis/menProductHomeAPI'
+import ProductItem from 'components/ProductItem/ProductItem'
+import menProductHomeAPI from 'apis/menProductHomeAPI'
 
 export default function MenSneakers() {
     const [menData, setMenData] = useState([])

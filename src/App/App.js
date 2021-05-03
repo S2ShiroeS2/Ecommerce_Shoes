@@ -1,8 +1,8 @@
 // eslint-disable-next-line
 import React, { useEffect } from 'react'
-import Header from '../layouts/Header/Header'
-import Footer from '../layouts/Footer/Footer'
-import Home from '../pages/Home'
+import Header from 'layouts/Header/Header'
+import Footer from 'layouts/Footer/Footer'
+import Home from 'pages/Home'
 
 function App() {
     const showMenu = (toggleId, navId) => {

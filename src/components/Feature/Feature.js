@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import ProductItem from '../ProductItem/ProductItem'
-import featuresAPI from '../../apis/featuresAPI'
+import ProductItem from 'components/ProductItem/ProductItem'
+import featuresAPI from 'apis/featuresAPI'
 
 export default function Feature() {
     const [feature, setFeature] = useState([])
