@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import React from 'react'
-import '../../css/main.css'
 
 export default function Product(props) {
     const products = props.data

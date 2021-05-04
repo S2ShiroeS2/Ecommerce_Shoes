@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import womenProductApi from '../../apis/womenProductApi'
-import ProductItem from '../ProductItem/ProductItem'
+import womenProductApi from 'apis/womenProductApi'
+import ProductItem from 'components/ProductItem/ProductItem'
 
 export default function WomenSneakers() {
     const [womenData, setWomenData] = useState([])

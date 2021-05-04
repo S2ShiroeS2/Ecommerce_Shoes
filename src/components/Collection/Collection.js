@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import CollectionItem from '../CollectionItem/CollectionItem'
-import collectionApi from '../../apis/collectionApi'
+import CollectionItem from 'components/CollectionItem/CollectionItem'
+import collectionApi from 'apis/collectionApi'
 
 export default function Collection() {
     const [collections, setCollection] = useState([])
