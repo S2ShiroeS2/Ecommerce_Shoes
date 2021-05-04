@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import NewItem from 'components/NewItem/NewItem'
+import newsApi from 'apis/newsApi'
 
 export default function News() {
+    const [newItemData, setNewItemData] = useState([])
+
+    useEffect(() => {
+        fetchNewItemData()
+    }, [])
+
+    const fetchNewItemData = async () => {
+        try {
+            const response = await newsApi.getAll()
+            if (response) {
+                setNewItemData(response)
+            }
+        } catch (err) {
+            // eslint-disable-next-line no-console
+            console.log('Failed to fetch list item in API', err)
+        }
+    }
     return (
         <section className="new section" id="new">
             <h2 className="section__title">NEWS</h2>
@@ -19,54 +38,9 @@ export default function News() {
                     </a>
                 </div>
                 <div className="new__sneaker">
-                    <div className="new__sneaker--card">
-                        <img
-                            src="/assets/images/new2.png"
-                            alt="new2"
-                            className="new__sneaker--image"
-                        />
-                        <div className="new__sneaker--overlay">
-                            <a href="/#" className="btn-explore">
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                    <div className="new__sneaker--card">
-                        <img
-                            src="/assets/images/new3.png"
-                            alt="new3"
-                            className="new__sneaker--image"
-                        />
-                        <div className="new__sneaker--overlay">
-                            <a href="/#" className="btn-explore">
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                    <div className="new__sneaker--card">
-                        <img
-                            src="/assets/images/new4.png"
-                            alt="new4"
-                            className="new__sneaker--image"
-                        />
-                        <div className="new__sneaker--overlay">
-                            <a href="/#" className="btn-explore">
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                    <div className="new__sneaker--card">
-                        <img
-                            src="/assets/images/new5.png"
-                            alt="new5"
-                            className="new__sneaker--image"
-                        />
-                        <div className="new__sneaker--overlay">
-                            <a href="/#" className="btn-explore">
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
+                    {newItemData[0]?.subs.map((item, index) => (
+                        <NewItem key={index} data={item} />
+                    ))}
                 </div>
             </div>
         </section>
