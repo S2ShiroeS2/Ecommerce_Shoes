@@ -219,7 +219,7 @@
             "main": {
                 "id": 1,
                 "title": "Mens shoes",
-                "sub_title": "From $79.99",
+                "sub_Title": "From $79.99",
                 "image": "../assets/images/new1.png"
             },
             "subs": [
