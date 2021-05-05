@@ -5,6 +5,7 @@ import MenSneakers from 'components/MenSneakers/MenSneakers'
 import WomenSneakers from 'components/WomenSneakers/WomenSneakers'
 import SaleIntro from 'components/SaleIntro/SaleIntro'
 import News from 'components/News/News'
+import SubscribeFrom from 'components/SubscribeFrom/SubscribeFrom'
 
 export {
     ProductIntro,
@@ -13,5 +14,6 @@ export {
     MenSneakers,
     WomenSneakers,
     SaleIntro,
-    News
+    News,
+    SubscribeFrom
 }
