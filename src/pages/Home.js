@@ -6,7 +6,8 @@ import {
     MenSneakers,
     WomenSneakers,
     SaleIntro,
-    News
+    News,
+    SubscribeFrom
 } from 'components/route'
 import introApi from 'apis/introApi'
 import saleIntroApi from 'apis/saleIntroApi'
@@ -53,6 +54,7 @@ export default function Home() {
             <WomenSneakers />
             <SaleIntro key={saleIntroData.id} data={saleIntroData} />
             <News />
+            <SubscribeFrom />
         </main>
     )
 }
