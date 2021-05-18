@@ -754,6 +754,11 @@ img {
             top: 2.5rem;
         }
     }
+    .nav {
+        &__logo {
+            margin-left: 2.5rem;
+        }
+    }
 }
 @media only screen and (min-width: 375px) {
     .home {
@@ -935,6 +940,9 @@ img {
         }
         &__item {
             margin-bottom: 0;
+        }
+        &__logo {
+            margin-left: 0;
         }
     }
     .bd-grid {
