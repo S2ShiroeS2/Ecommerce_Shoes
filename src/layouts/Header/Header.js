@@ -2,6 +2,21 @@ import React from 'react'
 import '../../scss/main.scss'
 
 export default function Header() {
+    React.useEffect(() => {
+        const showMenu = (toggleId, navId) => {
+            const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId)
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('show')
+                })
+            }
+        }
+
+        showMenu('nav-toggle', 'nav-menu')
+    }, [])
+
     return (
         <header className="l-header" id="header">
             <nav className="nav bd-grid">

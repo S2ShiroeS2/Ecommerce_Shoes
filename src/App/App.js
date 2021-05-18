@@ -5,17 +5,6 @@ import Footer from 'layouts/Footer/Footer'
 import Home from 'pages/Home'
 
 function App() {
-    const showMenu = (toggleId, navId) => {
-        const toggle = document.getElementById(toggleId),
-            nav = document.getElementById(navId)
-
-        if (toggle && nav) {
-            toggle.addEventListener('click', () => {
-                nav.classList.toggle('show')
-            })
-        }
-    }
-
     // REMOVE MENU
     const navLink = document.querySelectorAll('.nav__link'),
         navMenu = document.getElementById('nav-menu')
@@ -33,8 +22,6 @@ function App() {
             ? header.classList.add('scroll-header')
             : header.classList.remove('scroll-header')
     }
-
-    showMenu('nav-toggle', 'nav-menu')
 
     useEffect(() => {
         //SCROLL SECTIONS ACTIVE LINK
