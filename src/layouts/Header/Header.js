@@ -14,6 +14,37 @@ export default function Header() {
             }
         }
 
+        // SHOW BOX SEARCH MOBILE
+        const isShowBoxSearch = (btn_open, btn_close) => {
+            var click_Open = document.querySelector(btn_open),
+                click_Close = document.querySelector(btn_close),
+                box_Search = document.querySelector('.nav__search-box'),
+                btn_Search_Overlay = document.querySelector(
+                    '.btn-overlay-search'
+                ),
+                input_Search = document.querySelector(
+                    '.nav__search-box--input-search'
+                )
+
+            click_Open.addEventListener('click', () => {
+                box_Search.classList.add('active-search-box')
+                click_Close.classList.remove('is-none-btn')
+                click_Open.classList.add('is-show-btn-search')
+                btn_Search_Overlay.classList.remove('is-none')
+                input_Search.classList.add('active-search-input')
+                input_Search.classList.remove('is-none')
+            })
+            click_Close.addEventListener('click', () => {
+                box_Search.classList.remove('active-search-box')
+                click_Close.classList.add('is-none-btn')
+                click_Open.classList.remove('is-show-btn-search')
+                btn_Search_Overlay.classList.add('is-none')
+                input_Search.classList.remove('active-search-input')
+                input_Search.classList.add('is-none')
+            })
+        }
+
+        isShowBoxSearch('.btn-search', '.nav__close-search-box')
         showMenu('nav-toggle', 'nav-menu')
     }, [])
 
