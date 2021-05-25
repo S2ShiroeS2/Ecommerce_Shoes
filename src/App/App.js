@@ -1,8 +1,9 @@
 // eslint-disable-next-line
-import React, { useEffect, useRef } from 'react'
-import Header from 'layouts/Header/Header'
-import Footer from 'layouts/Footer/Footer'
-import Home from 'pages/Home'
+import React, { useEffect } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import LayoutWrapper from 'layouts/LayoutWrapper'
+import { Home, MenPage } from 'pages/index'
+import RouteWrapper from 'routes/RouteWrapper'
 
 function App() {
     // REMOVE MENU
@@ -52,11 +53,19 @@ function App() {
     }, [])
 
     return (
-        <div>
-            <Header />
-            <Home />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <RouteWrapper
+                exact
+                path="/"
+                component={Home}
+                layout={LayoutWrapper}
+            />
+            <RouteWrapper
+                path="/Mens"
+                component={MenPage}
+                layout={LayoutWrapper}
+            />
+        </BrowserRouter>
     )
 }
 

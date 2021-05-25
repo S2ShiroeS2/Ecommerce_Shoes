@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer(props) {
     return (
         <footer className="footer section">
             <div className="footer__container bd-grid">

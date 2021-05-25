@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../scss/main.scss'
 
-export default function Header() {
+export default function Header(props) {
     React.useEffect(() => {
         const showMenu = (toggleId, navId) => {
             const toggle = document.getElementById(toggleId),
