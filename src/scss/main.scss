@@ -228,6 +228,7 @@ img {
         width: 100%;
         background: #fff;
         overflow-y: scroll;
+        transition: all 0.5s ease;
     }
     .active-search-input {
         visibility: visible;
